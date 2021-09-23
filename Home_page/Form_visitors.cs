@@ -12,9 +12,13 @@ namespace Home_page
 {
     public partial class Form_visitors : Form
     {
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+
         public Form_visitors()
         {
             InitializeComponent();
+
+            player.SoundLocation = "piano.wav";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,5 +58,21 @@ namespace Home_page
             Form1 frm1 = new Form1();
             frm1.Show();
         }
+
+        private void Form_visitors_Load(object sender, EventArgs e)
+        {
+            //form visitors load 
+            player.Play();
+        
+       
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //mute music
+            player.Stop();
+        }
     }
+
 }
