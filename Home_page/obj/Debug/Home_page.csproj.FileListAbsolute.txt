@@ -1,0 +1,15 @@
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\bin\Debug\Home_page.exe.config
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\bin\Debug\Home_page.exe
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\bin\Debug\Home_page.pdb
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.Form1.resources
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.Form_login.resources
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.Properties.Resources.resources
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.csproj.GenerateResource.cache
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.csproj.CoreCompileInputs.cache
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.exe
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.pdb
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.Form_visitors.resources
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.Form_proorismos.resources
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.csproj.AssemblyReference.cache
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.Form_map.resources
+C:\Users\arisl\Desktop\tourist_guide\Home_page\Home_page\obj\Debug\Home_page.Form_aksiotheata.resources
