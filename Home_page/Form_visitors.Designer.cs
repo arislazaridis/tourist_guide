@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace Home_page
 {
     partial class Form_visitors
@@ -29,8 +31,10 @@ namespace Home_page
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_visitors));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,7 +43,8 @@ namespace Home_page
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +64,16 @@ namespace Home_page
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(799, 396);
             this.panel1.TabIndex = 0;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(716, 285);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(59, 45);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Mute";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button5
             // 
@@ -113,9 +128,9 @@ namespace Home_page
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -55);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -53);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(799, 315);
+            this.pictureBox1.Size = new System.Drawing.Size(799, 313);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -141,15 +156,11 @@ namespace Home_page
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // timer1
             // 
-            this.button7.Location = new System.Drawing.Point(716, 285);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(59, 45);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Mute";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 2000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form_visitors
             // 
@@ -183,5 +194,9 @@ namespace Home_page
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+
+        public PictureBox slideshowBox { get; private set; }
     }
 }

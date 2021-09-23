@@ -19,6 +19,18 @@ namespace Home_page
             InitializeComponent();
 
             player.SoundLocation = "piano.wav";
+            
+        }
+        private int imageno = 0;  //slider
+
+        private void loadimage()
+        {
+            if (imageno == 4)
+            {
+                imageno = 0;
+            }
+            pictureBox1.ImageLocation = string.Format(@"Images\{0}.jpg", imageno);
+            imageno++;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -73,6 +85,14 @@ namespace Home_page
             //mute music
             player.Stop();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //slideshow
+            loadimage();
+        }
+
+        
     }
 
 }
