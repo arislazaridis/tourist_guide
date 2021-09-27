@@ -34,6 +34,7 @@ namespace Home_page
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_visitors));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -45,6 +46,7 @@ namespace Home_page
             this.button6 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +54,7 @@ namespace Home_page
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -65,11 +68,22 @@ namespace Home_page
             this.panel1.Size = new System.Drawing.Size(799, 396);
             this.panel1.TabIndex = 0;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(681, 322);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(77, 45);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "Reset History";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.MouseHover += new System.EventHandler(this.button8_MouseHover_1);
+            // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(716, 285);
+            this.button7.Location = new System.Drawing.Point(681, 279);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(59, 45);
+            this.button7.Size = new System.Drawing.Size(77, 37);
             this.button7.TabIndex = 6;
             this.button7.Text = "Mute";
             this.button7.UseVisualStyleBackColor = true;
@@ -77,7 +91,7 @@ namespace Home_page
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(576, 285);
+            this.button5.Location = new System.Drawing.Point(538, 285);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(116, 82);
             this.button5.TabIndex = 5;
@@ -87,7 +101,7 @@ namespace Home_page
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(446, 285);
+            this.button4.Location = new System.Drawing.Point(411, 285);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 82);
             this.button4.TabIndex = 4;
@@ -97,7 +111,7 @@ namespace Home_page
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(317, 285);
+            this.button3.Location = new System.Drawing.Point(282, 285);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(105, 82);
             this.button3.TabIndex = 3;
@@ -107,7 +121,7 @@ namespace Home_page
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(184, 285);
+            this.button2.Location = new System.Drawing.Point(151, 285);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 82);
             this.button2.TabIndex = 2;
@@ -117,7 +131,7 @@ namespace Home_page
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(42, 285);
+            this.button1.Location = new System.Drawing.Point(12, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 82);
             this.button1.TabIndex = 1;
@@ -162,6 +176,14 @@ namespace Home_page
             this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
+            // 
             // Form_visitors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -196,6 +218,8 @@ namespace Home_page
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private Button button8;
+        private ToolTip toolTip1;
 
         public PictureBox slideshowBox { get; private set; }
     }

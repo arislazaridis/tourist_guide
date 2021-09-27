@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +58,18 @@
     </Compile>
     <Compile Include="Form_aksiotheata.Designer.cs">
       <DependentUpon>Form_aksiotheata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_beaches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_beaches.Designer.cs">
+      <DependentUpon>Form_beaches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_contact.Designer.cs">
+      <DependentUpon>Form_contact.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_login.cs">
       <SubType>Form</SubType>
@@ -82,6 +95,9 @@
     <Compile Include="Form_visitors.Designer.cs">
       <DependentUpon>Form_visitors.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistoryTrack.cs" />
+    <Compile Include="IHistory.cs" />
+    <Compile Include="InternetPage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -89,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_aksiotheata.resx">
       <DependentUpon>Form_aksiotheata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_beaches.resx">
+      <DependentUpon>Form_beaches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_contact.resx">
+      <DependentUpon>Form_contact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_login.resx">
       <DependentUpon>Form_login.cs</DependentUpon>
@@ -111,6 +133,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

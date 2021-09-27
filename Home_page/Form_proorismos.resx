@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>Mykonos is an island in the Aegean Sea and belongs to the Cyclades. The capital of the island is Chora, located on the west side of the island. Mykonos had a population of 10,134 people in the 2011 census. The area of ​​the island is 106 sq.km., while it has a coastline length of 89 km. Mykonos was one of the first Greek islands to be developed as a tourist destination. Tourists have been flocking to the island since the 1960s. Today the nightlife of Mykonos is considered one of the liveliest and most active in Europe. The most famous part of the island in the country is called Little Venice because of its resemblance to Venice.</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Η Μύκονος είναι νησί του Αιγαίου Πελάγους και ανήκει στις Κυκλάδες. Πρωτεύουσα του νησιού είναι η Χώρα, που βρίσκεται στη δυτική πλευρά του νησιού. Η Μύκονος είχε πληθυσμό 10.134 άτομα στην απογραφή του 2011. Η έκταση του νησιού είναι 106 τ.χλμ., ενώ έχει μήκος ακτών 89 χιλιόμετρα. Η Μύκονος ήταν από τα πρώτα ελληνικά νησιά που αναπτύχθηκε τουριστικά. Ήδη από τη δεκαετία του 1960 συνέρρεαν μαζικά τουρίστες προς το νησί. Σήμερα η νυχτερινή ζωή της Μυκόνου θεωρείται από τις πιο ζωντανές και ενεργές στην Ευρώπη. Το πιο γνωστό σημείο του νησιού στη χώρα ονομάζεται μικρή Βενετία λόγω της ομοιότητας του με τη Βενετία.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2040,8 +2046,5 @@
         7XmQpVDdm9A6e7MAdyUD2AN1zDf5yiHYsknXyR+schYm/A9mI+Qh4bNOuPnrFYBUCqHwfGsPdh0gqnoC
         0DzqrjQAFBFz0BWUt1lEHAhM35iB18OFwxaUB5dkesCDI3n/2Q==
 </value>
-  </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Η Μύκονος είναι νησί του Αιγαίου Πελάγους και ανήκει στις Κυκλάδες. Πρωτεύουσα του νησιού είναι η Χώρα, που βρίσκεται στη δυτική πλευρά του νησιού. Η Μύκονος είχε πληθυσμό 10.134 άτομα στην απογραφή του 2011. Η έκταση του νησιού είναι 106 τ.χλμ., ενώ έχει μήκος ακτών 89 χιλιόμετρα. Η Μύκονος ήταν από τα πρώτα ελληνικά νησιά που αναπτύχθηκε τουριστικά. Ήδη από τη δεκαετία του 1960 συνέρρεαν μαζικά τουρίστες προς το νησί. Σήμερα η νυχτερινή ζωή της Μυκόνου θεωρείται από τις πιο ζωντανές και ενεργές στην Ευρώπη. Το πιο γνωστό σημείο του νησιού στη χώρα ονομάζεται μικρή Βενετία λόγω της ομοιότητας του με τη Βενετία.</value>
   </data>
 </root>

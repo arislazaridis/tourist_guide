@@ -20,16 +20,22 @@ namespace Home_page
         private void contactUsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             //contact us
+            Form_contact frmcontact = new Form_contact();
+            frmcontact.Show();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //about
+            MessageBox.Show("Ο τουριστικός οδηγός εκπονήθηκε απο τους φοιτητές : " +
+                "Άρη Λαζαρίδη και Μάκη Μακρανδρέου με ΑΜ : " +
+                "20042,20045");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //exit
+            Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,6 +59,20 @@ namespace Home_page
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+            //με το που πατησουμε το label  τοτε μας παει στην ιστσελιδα
+
+            //φτιαχνουμε ενα αντικειμενο τυπου InternetPage οπου μεσα στον κονστρακτορα βαζουλε το λινκ που θα εχει
+
+            InternetPage newpage = new InternetPage("https://mykonos.gr/en/");
+
+            //στην συνεχεια καλουμε την μεθοδο ωστς να ανοιξει η ιστοσελιδα
+            newpage.OpenWebPage();
 
         }
     }
