@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
 namespace Home_page
 {
   
@@ -15,5 +16,5 @@ namespace Home_page
             void DeleteHistory(ArrayList arr);
         }
     }
-
+*/
 

@@ -50,6 +50,9 @@ namespace Home_page
             if (isValid == false && textBox1.Text != "")
             {
                 MessageBox.Show("Λαθος μορφή email , Πληκτρολόγησε ξανα ");
+                
+                
+                
             }
             if (textBox1.Text != "" && richTextBox1.Text != "" && isValid ==true)
             {

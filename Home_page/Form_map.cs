@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Home_page
 {
@@ -20,7 +21,11 @@ namespace Home_page
         private void button1_Click(object sender, EventArgs e)
         {
             //αποθήκευση τηλεφώνων 
+            TextWriter writer = new StreamWriter(@"C:\Users\arisl\Downloads\Home_page (1)\Home_page\Home_page\map.txt");
 
+            writer.Write(richTextBox1.Text);
+            MessageBox.Show("Αποθηκεύτηκε σε αρχείο");
+            writer.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

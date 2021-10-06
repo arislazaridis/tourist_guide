@@ -58,7 +58,7 @@ namespace Home_page
             richTextBox1.Visible = false;
             richTextBox2.Visible = true;
             button_speech.Visible = true;
-            button_stop.Visible = true;
+            
 
         }
 
@@ -68,7 +68,7 @@ namespace Home_page
             richTextBox1.Visible = true;
             richTextBox2.Visible = false;
             button_speech.Visible = false;
-            button_stop.Visible = false;
+         
 
 
         }
@@ -88,7 +88,7 @@ namespace Home_page
             richTextBox1.Visible = true;
             richTextBox2.Visible = false;
             button_speech.Visible = false;
-            button_stop.Visible = false;
+          
         }
     }
     }

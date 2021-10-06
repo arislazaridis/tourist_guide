@@ -15,18 +15,18 @@ namespace Home_page
     {
         System.Media.SoundPlayer player = new System.Media.SoundPlayer();
         //dilwnoume mia lista opou tha valoume oles tis onomasies txt pou tha dimiourgoun ta koumpia mas pou ftiaxnoun to istoriko
-        ArrayList mytxtlist = new ArrayList();
+        /* ArrayList mytxtlist = new ArrayList(); */
         public Form_visitors()
         {
             InitializeComponent();
 
             player.SoundLocation = "piano.wav";
 
-            mytxtlist.Add("desthistory.txt");
-            mytxtlist.Add("maphistory.txt");
-            mytxtlist.Add("beachhistory.txt");
-            mytxtlist.Add("acthistory.txt");
-            mytxtlist.Add("viewhistory.txt");
+            /* mytxtlist.Add("desthistory.txt");
+               mytxtlist.Add("maphistory.txt");
+               mytxtlist.Add("beachhistory.txt");
+               mytxtlist.Add("acthistory.txt");
+               mytxtlist.Add("viewhistory.txt"); */
 
         }
         private int imageno = 0;  //slider
@@ -78,6 +78,8 @@ namespace Home_page
         {
             //εκδηλώσεις
             button5.ForeColor = Color.Red;
+            Form_calendar frmcalendar = new Form_calendar();
+            frmcalendar.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -121,13 +123,17 @@ namespace Home_page
             button5.ForeColor = Color.Black;
             button6.ForeColor = Color.Black;
 
-            //τωρα εδω θα σβησουμε το μονιμο ιστορικο αφου το επιθυμει ο χρηστης πατωντας αυτο το κουμπι
+
+
+            /* //τωρα εδω θα σβησουμε το μονιμο ιστορικο αφου το επιθυμει ο χρηστης πατωντας αυτο το κουμπι
             //αρχικα κλινουμε τον  timer 2 ετσι ωστε να μην ανανεωνεται το αρχεια συνεχως
             timer2.Stop();
+
             //στην συνεχεια θα φτιαξουμε ενα αντικειμενο τυπου HistoryTrack
             HistoryTrack deletehist = new HistoryTrack();
+
             //και εδω καλουμε την μεθοδο ετσι ωστε να ελεγξει αν υπαρχουν τα αρχεια και να τα σβησει
-            deletehist.DeleteHistory(mytxtlist);
+            deletehist.DeleteHistory(mytxtlist); */
 
         }
 
@@ -147,7 +153,9 @@ namespace Home_page
         private void timer2_Tick(object sender, EventArgs e)
         {
           
+            /*
                 //αυτος  o timer ειναι ετσι ωστε να ανανεωνεται συνεχως η ο ελεγχος για ποια κουμπια ειναι πατημενα
+
                 //φτιαχνω ενα αντικειμενο τυπου HistoryTrack ωστε να καλεσω της μεθοδους και να παρακολουθησω το ιστορικο του χρηστη
                 HistoryTrack ht = new HistoryTrack();
                 //καλω της μεθοδους ωστε για το καθε κουμπι να ελεγξω αν ειναι πατημενο καθως και να γραψει το καταλληλο μηνυμα στο αρχειο του
@@ -155,7 +163,7 @@ namespace Home_page
                 ht.PrintHistory(button2, "maphistory.txt");
                 ht.PrintHistory(button3, "beachhistory.txt");
                 ht.PrintHistory(button4, "acthistory.txt");
-                ht.PrintHistory(button5, "viewhistory.txt");
+                ht.PrintHistory(button5, "viewhistory.txt"); */
 
             
 
